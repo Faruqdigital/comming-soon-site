@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Metrophobic&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
@@ -31,9 +30,10 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 14px;
+    /* margin-bottom: 20px; */
 }
 
-.header-text h5{
+.header-text h5 {
     /* margin-top: 5px; */
     display: inline-flex;
     margin-left: 5px;
@@ -41,13 +41,14 @@ header {
     letter-spacing: 2px;
     font-size: 12px;
     font-weight: 300;
-    gap: 5px;
+    /* gap: 5px; */
     /* padding-top: 0px; */
 }
 
 
-.bx-menu{
+.bx-menu {
     color: #EB008A;
+    background-color: black;
     font-size: 18px;
     border: 1px solid gray;
     border-radius: 2px;
@@ -59,17 +60,37 @@ header {
 
 /* hero section */
 .hero-section {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 100px;
 }
 
 .hero {
     display: flex;
-    gap: 60px;
+    gap: 100px;
     justify-content: space-around;
 }
 
 /* launching */
+.launcehing h5 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 35px;
+}
+
+.launcehing h5::before {
+    content: "";
+    top: 6px;
+    left: -38px;
+    width: 33px;
+    height: 1px;
+    background-color: #EB008A;
+    position: absolute;
+    background-size: cover;
+}
+
 .days {
     display: flex;
 }
@@ -93,58 +114,85 @@ header {
     gap: 16px;
 }
 
-.hms h4{
+.hms h4 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
 
-.hms h4 span{
+.hms h4 span {
     font-size: 14px;
     text-transform: uppercase;
     opacity: .5;
 }
 
 /* count */
-.count h2{
-    font-size: 62px;
+.count h5 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 50px;
+    margin-bottom: 24px;
+}
+
+.count h5::before {
+    content: "";
+    top: 6px;
+    left: -47px;
+    width: 37px;
+    height: 1px;
+    background-color: #EB008A;
+    position: absolute;
+    background-size: cover;
+}
+
+.count h2 {
+    font-size: 56px;
     font-weight: 500;
     font-family: 'Domine', serif;
     /* font-family: 'Metrophobic', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
-
 }
 
-.count p{
-    opacity: .5;
-    line-height: 25px;
+.count p {
+    opacity: .7;
+    line-height: 30px;
     /* font-family: 'Roboto', sans-serif; */
     margin-top: 32px;
     margin-bottom: 20px;
+    font-weight: 200;
 }
 
-.form{
+.form {
     display: inline-flex;
 }
 
-.form input{
+.form input {
     border: none;
     padding: 10px;
     background-color: gray;
-    opacity: .2;
+    opacity: .5;
+    /* color: white; */
 }
 
-.form .notify{
+.input input {
+    color: white;
+}
+
+.form .notify {
     background-color: #EB008A;
     padding: 8px 18px;
     text-transform: uppercase;
     font-size: 14px;
     cursor: pointer;
-    /* width: 50px; */
 }
 
-.form .notify h6{
+.form .notify a {
     margin-top: 5px;
+    text-decoration: none;
+    color: white;
 }
 
 /* .count .form{
@@ -153,19 +201,60 @@ header {
 
 
 /* icons */
-.icons{
+.icons {
     margin-top: 100px;
 }
 
-.icons .icon ol{
+.icons .icon ol {
     margin-bottom: 24px;
 }
 
-.icons .icon ol:hover{
-   color: red;
+.icons .icon ol:hover {
+    color: red;
 }
 
-.icons .icon ol i{
+.icons .icon ol i {
     font-size: 18px;
     cursor: pointer;
+}
+
+@media (max-width:1024px){
+    .count h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:768px) {
+    .hero {
+        display: block;
+    }
+
+    .count h2 {
+        font-size: 36px;
+    }
+
+    .count h5 {
+        margin-top: 40px;
+    }
+
+    .icon{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width:576px){
+    .form {
+        display: block;
+    }
+
+    .form .notify {
+       margin-top: 10px;
+    }
+
+    .icon{
+        gap: 20px;
+    }
 }
