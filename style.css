@@ -31,15 +31,16 @@ font-family: 'Roboto', sans-serif; */
 /* hero section */
 .hero-section {
     margin-top: 30px;
+    margin-left: 100px;
 }
 
 .hero {
     display: flex;
-    gap: 100px;
+    gap: 60px;
     justify-content: space-around;
 }
 
-
+/* launching */
 .days {
     display: flex;
 }
@@ -53,12 +54,29 @@ font-family: 'Roboto', sans-serif; */
 .days h6 {
     margin-top: 100px;
     margin-left: 10px;
-    background-color: #EB008A;
+    /* background-color: #EB008A; */
     padding: 0 5px;
     padding-bottom: 0;
 }
 
 .hms {
     display: flex;
-    gap: 10px;
+    gap: 16px;
+}
+
+.hms h4{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.hms h4 span{
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+/* count */
+.count h2{
+    font-size: 70px;
 }
