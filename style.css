@@ -12,6 +12,8 @@ body {
     background-position: center;
     color: white;
     background-color: black;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /* header */
@@ -47,7 +49,7 @@ font-family: 'Roboto', sans-serif; */
 
 .days h2 {
     font-size: 130px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: 100;
 }
 
@@ -78,5 +80,52 @@ font-family: 'Roboto', sans-serif; */
 
 /* count */
 .count h2{
-    font-size: 70px;
+    font-size: 62px;
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+
+.count p{
+    opacity: .5;
+    line-height: 25px;
+    /* font-family: 'Roboto', sans-serif; */
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.form{
+    display: inline-flex;
+}
+
+.form input{
+    border: none;
+    padding: 10px;
+    background-color: gray;
+    opacity: .2;
+}
+
+.form .notify{
+    background-color: #EB008A;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* width: 50px; */
+}
+
+.form .notify h6{
+    margin-top: 5px;
+}
+
+/* .count .form{
+    color: white;
+} */
+
+
+/* icons */
+.icons{
+    margin-top: 100px;
+}
+
+.icons .icon ol{
+    margin-bottom: 24px;
 }
