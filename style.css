@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 90%;
+    margin: 0 auto;
+    background-image: url(images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: black;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Metrophobic&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* font-family: 'Domine', serif;
+font-family: 'Metrophobic', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* hero section */
+.hero-section {
+    margin-top: 30px;
+}
+
+.hero {
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+
+.days {
+    display: flex;
+}
+
+.days h2 {
+    font-size: 130px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.days h6 {
+    margin-top: 100px;
+    margin-left: 10px;
+    background-color: #EB008A;
+    padding: 0 5px;
+    padding-bottom: 0;
+}
+
+.hms {
+    display: flex;
+    gap: 10px;
+}
