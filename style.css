@@ -102,12 +102,12 @@ header {
     font-weight: 100;
 }
 
-.days h6 {
+.day h6 {
     margin-top: 100px;
     margin-left: 10px;
-    /* background-color: #EB008A; */
-    padding: 0 5px;
-    padding-bottom: 0;
+    background-color: #EB008A;
+    padding: 5px 10px;
+    border-radius: 1px;
 }
 
 .hms {
@@ -218,6 +218,9 @@ header {
     font-size: 18px;
     cursor: pointer;
 }
+
+
+/* ------ media screen ------- */
 
 @media (max-width:1024px){
     .count h2 {
